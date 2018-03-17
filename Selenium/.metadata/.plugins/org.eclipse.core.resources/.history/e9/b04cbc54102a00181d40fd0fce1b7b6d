@@ -1,0 +1,30 @@
+package com.sin.scenario;
+
+import org.testng.annotations.Test;
+
+import com.sin.utility.BasePage;
+
+import org.testng.annotations.BeforeSuite;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterSuite;
+
+public class Test003 {
+	@Test
+	public void f() {
+	}
+
+	@BeforeSuite
+	public void beforeSuite() {
+
+		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+		driver = new ChromeDriver();
+		BasePage.setDriver(driver);
+
+	}
+
+	@AfterSuite
+	public void afterSuite() {
+		driver.quit();
+	}
+
+}

@@ -6,10 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
 import com.sin.edx.EdxLoginFlow;
 import com.sin.utility.BasePage;
 
@@ -18,7 +17,7 @@ public class Test002 {
     private WebDriver driver;
     private EdxLoginFlow loginToEdx = null;
 
-    @BeforeClass
+    @BeforeSuite
     public void beforeClass() {
     	System.setProperty("webdriver.chrome.driver", 
     			"src/main/resources/chromedriver.exe");
@@ -26,7 +25,7 @@ public class Test002 {
         BasePage.setDriver(driver);
     }
 
-    @AfterClass
+    @AfterSuite
     public void afterClass() {
         driver.quit();
     }
