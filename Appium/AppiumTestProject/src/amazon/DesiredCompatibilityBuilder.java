@@ -1,0 +1,32 @@
+package amazon;
+
+import java.io.File;
+
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
+
+public class DesiredCompatibilityBuilder {
+	
+	private static DesiredCapabilities capabilities = new DesiredCapabilities();
+	
+	public static DesiredCapabilities getCapability(String application) {
+/*		File classpathRoot = new File(System.getProperty("user.dir"));
+		File appDir = new File(classpathRoot, "/Apps/");
+		File app = new File(appDir, "in.amazon.mShop.android.shopping.apk");*/
+		
+		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
+		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomation2");
+		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "LocalEmulator");
+		
+		capabilities.setCapability(MobileCapabilityType.ACCEPT_SSL_CERTS, true);
+		//capabilities.setCapability("app", app.getAbsolutePath());
+		//capabilities.setCapability(MobileCapabilityType.Clear_SYSTEM_FILES, Platform.ANDROID);
+		capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "in.amazon.mShop.android.shopping");
+		capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.amazon.mShop.home.HomeActivity");
+		
+		return capabilities;
+	}
+}

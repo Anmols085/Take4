@@ -1,0 +1,7 @@
+package com.sin.edx;
+
+import com.sin.utility.BasePage;
+
+public class EdxBasePage extends BasePage{
+
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13333" started-at="2018-03-17T15:11:47Z" finished-at="2018-03-17T15:12:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13333" started-at="2018-03-17T15:11:47Z" finished-at="2018-03-17T15:12:00Z">
+      <class name="com.sin.scenario.Test002">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.sin.scenario.Test002@28d25987]" name="beforeClass" is-config="true" duration-ms="2663" started-at="2018-03-17T20:41:47Z" finished-at="2018-03-17T20:41:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="verifySearchButton()[pri:0, instance:com.sin.scenario.Test002@28d25987]" name="verifySearchButton" duration-ms="1471" started-at="2018-03-17T20:41:50Z" finished-at="2018-03-17T20:41:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchButton -->
+        <test-method status="PASS" signature="loginEdx()[pri:0, instance:com.sin.scenario.Test002@28d25987]" name="loginEdx" duration-ms="8570" started-at="2018-03-17T20:41:51Z" depends-on-methods="com.sin.scenario.Test002.verifySearchButton" finished-at="2018-03-17T20:42:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginEdx -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.sin.scenario.Test002@28d25987]" name="afterClass" is-config="true" duration-ms="601" started-at="2018-03-17T20:42:00Z" finished-at="2018-03-17T20:42:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.sin.scenario.Test002 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

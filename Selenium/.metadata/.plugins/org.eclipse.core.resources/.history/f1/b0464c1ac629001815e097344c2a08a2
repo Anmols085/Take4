@@ -1,0 +1,9 @@
+package com.edx;
+
+import org.openqa.selenium.WebDriver;
+
+public class EdxLoginFlow {
+	public void navigateToLoginPage(WebDriver driver) {
+		
+	}
+}

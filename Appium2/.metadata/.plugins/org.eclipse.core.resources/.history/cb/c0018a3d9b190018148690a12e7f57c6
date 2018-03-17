@@ -1,0 +1,11 @@
+package com.sin.MobileAutomation;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+public class BuildDesiredCapabilities {
+	private static DesiredCapabilities capabilities = new DesiredCapabilities();
+	
+	public static DesiredCapabilities getCapabilities(String str) {
+		return capabilities;
+	}
+}

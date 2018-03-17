@@ -1,0 +1,10 @@
+B:\Workspace\Visual Studio\bin\Debug\netcoreapp2.0\Visual Studio.deps.json
+B:\Workspace\Visual Studio\bin\Debug\netcoreapp2.0\Visual Studio.runtimeconfig.json
+B:\Workspace\Visual Studio\bin\Debug\netcoreapp2.0\Visual Studio.runtimeconfig.dev.json
+B:\Workspace\Visual Studio\bin\Debug\netcoreapp2.0\Visual Studio.dll
+B:\Workspace\Visual Studio\bin\Debug\netcoreapp2.0\Visual Studio.pdb
+B:\Workspace\Visual Studio\obj\Debug\netcoreapp2.0\Visual Studio.csproj.CoreCompileInputs.cache
+B:\Workspace\Visual Studio\obj\Debug\netcoreapp2.0\Visual Studio.AssemblyInfoInputs.cache
+B:\Workspace\Visual Studio\obj\Debug\netcoreapp2.0\Visual Studio.AssemblyInfo.cs
+B:\Workspace\Visual Studio\obj\Debug\netcoreapp2.0\Visual Studio.dll
+B:\Workspace\Visual Studio\obj\Debug\netcoreapp2.0\Visual Studio.pdb

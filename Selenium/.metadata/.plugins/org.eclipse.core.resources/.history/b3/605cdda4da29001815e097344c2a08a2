@@ -1,0 +1,17 @@
+package com.sin.edx;
+
+import org.openqa.selenium.WebDriver;
+
+public class EdxLoginFlow {
+	
+	EdxHomePage homePage = null;
+	EdxValidation validateNavigation = null;
+	
+	public void navigateToLoginPage(WebDriver driver) {
+		
+		homePage = new EdxHomePage();
+		validateNavigation = new EdxValidation();
+		validateNavigation.validateHomePageLogo(homePage);
+		homePage.clickLoginBtn();
+	}
+}

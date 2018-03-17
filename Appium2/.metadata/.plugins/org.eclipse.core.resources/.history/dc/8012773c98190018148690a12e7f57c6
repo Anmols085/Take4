@@ -1,0 +1,5 @@
+package com.sin.MobileAutomation;
+
+public class BuildDesiredCapabilities {
+
+}
