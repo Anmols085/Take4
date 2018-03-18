@@ -9,6 +9,7 @@
 	</test> <!-- Test -->
 	<test name="TestCoursera">
 		<classes>
+			<class name="com.sin.scenario.Test002" />
 			<class name="com.sin.scenario.Test003" />
 		</classes>
 	</test> <!-- Test -->
