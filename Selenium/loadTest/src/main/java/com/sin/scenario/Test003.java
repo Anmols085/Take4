@@ -1,5 +1,7 @@
 package com.sin.scenario;
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.Test;
 
 import com.sin.edx.EdxBrowseCoursesFlow;
@@ -14,6 +16,8 @@ public class Test003 {
 	@Test
 	public void browseCourses() {
 
+		BasePage.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		System.out.println("Inside test003");
 		homePage = new EdxBrowseCoursesFlow();
 		BasePage.getDriver().get("https://www.edx.org/");
 		homePage.navigateToBrowseCourse();

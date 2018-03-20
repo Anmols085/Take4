@@ -27,6 +27,7 @@ public class Test002 {
     @Test	//Verify Google home page
     public void verifySearchButton() {
 
+    	System.out.println("Inside test002, Google section");
         BasePage.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         BasePage.getDriver().get("http://www.google.com");
         String search_text = "Googl Search";
@@ -39,6 +40,7 @@ public class Test002 {
     	(dependsOnMethods = {"verifySearchButton"})
     public void loginEdx() {
 
+    	System.out.println("Inside test002, Edx section");
     	loginToEdx = new EdxLoginFlow();
     	BasePage.getDriver().get("https://www.edx.org/");
     	loginToEdx.navigateToLoginPage();

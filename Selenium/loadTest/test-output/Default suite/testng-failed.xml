@@ -5,7 +5,7 @@
     <classes>
       <class name="com.sin.scenario.Test003">
         <methods>
-          <include name="loginEdx"/>
+          <include name="browseCourses"/>
         </methods>
       </class> <!-- com.sin.scenario.Test003 -->
     </classes>

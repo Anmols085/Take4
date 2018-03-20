@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="false">
 	<test name="TestEdx">
 		<classes>
-			<class name="com.sin.scenario.Test002" />
+			<class name="com.sin.scenario.Test002"/>
 			<class name="com.sin.scenario.Test003" />
 		</classes>
 	</test> <!-- Test -->
