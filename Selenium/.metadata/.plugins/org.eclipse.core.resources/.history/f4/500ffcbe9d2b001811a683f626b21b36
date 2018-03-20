@@ -1,0 +1,16 @@
+package com.sin.edx;
+
+public class EdxBrowseCoursesFlow {
+	
+	EdxHomePage homePage = null;
+	EdxValidation validateNavigation = null;
+
+	public void navigateToBrowseCourse() {
+		
+		homePage = new EdxHomePage();
+		validateNavigation = new EdxValidation();
+		validateNavigation.verifySearchButton(homePage);
+		homePage.searchCourse("Selenium");
+		homePage.clickSearchBtn();
+	}
+}

@@ -1,0 +1,12 @@
+package com.sin.edx;
+
+public class EdxBrowseCoursesFlow {
+	
+	EdxHomePage homePage = null;
+	EdxValidation validateNavigation = null;
+
+	public void navigateToBrowseCourse() {
+		
+		
+	}
+}

@@ -1,0 +1,19 @@
+package com.sin.scenario;
+
+import org.testng.annotations.Test;
+
+import com.sin.edx.EdxLoginFlow;
+import com.sin.utility.BasePage;
+
+public class Test003 {
+	
+	private EdxLoginFlow loginToEdx = null;
+
+	@Test
+	public void loginEdx() {
+
+		loginToEdx = new EdxLoginFlow();
+		BasePage.getDriver().get("https://www.edx.org/");
+		loginToEdx.navigateToLoginPage();
+	}
+}

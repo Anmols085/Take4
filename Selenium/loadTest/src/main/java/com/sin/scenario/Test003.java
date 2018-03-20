@@ -2,22 +2,20 @@ package com.sin.scenario;
 
 import org.testng.annotations.Test;
 
-import com.sin.edx.EdxLoginFlow;
+import com.sin.edx.EdxBrowseCoursesFlow;
+import com.sin.edx.EdxValidation;
 import com.sin.utility.BasePage;
-
-import org.openqa.selenium.WebDriver;
 
 public class Test003 {
 	
-	private EdxLoginFlow loginToEdx = null;
+	private EdxBrowseCoursesFlow homePage = null;
+	EdxValidation validateNavigation = null;;
 
 	@Test
-	public void loginEdx() {
+	public void browseCourses() {
 
-		WebDriver driver = BasePage.getDriver();
-		loginToEdx = new EdxLoginFlow();
-		driver.get("https://www.edx.org/");
-		loginToEdx.navigateToLoginPage();
+		homePage = new EdxBrowseCoursesFlow();
+		BasePage.getDriver().get("https://www.edx.org/");
+		homePage.navigateToBrowseCourse();
 	}
-
 }

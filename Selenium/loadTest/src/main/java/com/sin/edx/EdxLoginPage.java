@@ -3,7 +3,9 @@ package com.sin.edx;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class EdxLoginPage extends EdxBasePage{
+import com.sin.utility.InitBasePage;
+
+public class EdxLoginPage extends InitBasePage{
 	
 	@FindBy(xpath = "//*[@id=\"login-form\"]/h2")
 		WebElement heading;

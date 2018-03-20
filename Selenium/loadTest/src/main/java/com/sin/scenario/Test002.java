@@ -2,9 +2,7 @@ package com.sin.scenario;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -14,39 +12,35 @@ import com.sin.utility.BasePage;
 
 public class Test002 {
 
-    private WebDriver driver;
     private EdxLoginFlow loginToEdx = null;
 
     @BeforeSuite
-    public void beforeClass() {
-    	
-    	System.setProperty("webdriver.chrome.driver", 
-    			"src/main/resources/chromedriver.exe");
-        driver = new ChromeDriver();
-        BasePage.setDriver(driver);
+    public void beforeSuite() {
+        BasePage.generateWebDriver("Chrome");
     }
 
     @AfterSuite
     public void afterClass() {
-        driver.quit();
+    	BasePage.quitDriver();
     }
 
-    @Test
+    @Test	//Verify Google home page
     public void verifySearchButton() {
 
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("http://www.google.com");
+        BasePage.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        BasePage.getDriver().get("http://www.google.com");
         String search_text = "Googl Search";
-        WebElement search_button = driver.findElement(By.name("btnK"));
+        WebElement search_button = BasePage.getDriver().findElement(By.name("btnK"));
         String text = search_button.getAttribute("value");
         Assert.assertNotEquals(text, search_text, "Text not found!");
     }
     
-    @Test(dependsOnMethods = {"verifySearchButton"})
+    @Test	//Verify login error message from EDX
+    	(dependsOnMethods = {"verifySearchButton"})
     public void loginEdx() {
-    	
+
     	loginToEdx = new EdxLoginFlow();
-    	driver.get("https://www.edx.org/");
+    	BasePage.getDriver().get("https://www.edx.org/");
     	loginToEdx.navigateToLoginPage();
     }
 }

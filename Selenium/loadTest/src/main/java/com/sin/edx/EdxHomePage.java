@@ -3,7 +3,9 @@ package com.sin.edx;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class EdxHomePage extends EdxBasePage{
+import com.sin.utility.InitBasePage;
+
+public class EdxHomePage extends InitBasePage{
 	
 	@FindBy(xpath="//*[@id=\"logo\"]/h1/a/img")
 			WebElement logo;
@@ -11,6 +13,8 @@ public class EdxHomePage extends EdxBasePage{
 			WebElement signinBtn;
 	@FindBy(xpath="//*[@id=\"page\"]/header/div/div/div/div[3]/nav/a[2]")
 			WebElement registerBtn;
+	@FindBy(className="search-bar-label")
+	WebElement searchTab;
 	@FindBy(id="home-hero")
 			WebElement searchText;
 	@FindBy(id="edit-submit-home-hero")
@@ -23,5 +27,14 @@ public class EdxHomePage extends EdxBasePage{
 	}
 	public void clickLoginBtn() {
 		signinBtn.click();
+	}
+	public String getSearchText() {
+		return searchTab.getText();
+	}
+	public void searchCourse(String course) {
+		searchText.sendKeys(course);
+	}
+	public void clickSearchBtn() {
+		searchBtn.click();
 	}
 }
