@@ -1,9 +1,0 @@
-package com.sin.edx;
-
-import org.openqa.selenium.support.PageFactory;
-
-public class EdxLoginPage extends EdxBasePage{
-	public EdxLoginPage() {
-		PageFactory.initElements(super.getWebDriver(), this);
-	}
-}

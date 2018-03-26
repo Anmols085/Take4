@@ -1,8 +1,0 @@
-package com.sin.edx;
-
-public class EdxValidation {
-	
-	public void validateHomePageLogo(EdxHomePage homePage){
-		homePage.verifyNavigation();
-	}
-}

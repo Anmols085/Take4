@@ -1,7 +1,0 @@
-package com.sin.MobileAutomation;
-
-public class RequiredDriver {
-	public static AndroidDriver getDriverInstance(String str) {
-		
-	}
-}
