@@ -1,9 +1,0 @@
-package com.sin.utility;
-
-import org.openqa.selenium.support.PageFactory;
-
-public class EdxBasePage extends BasePage{
-	public EdxBasePage() {
-		PageFactory.initElements(super.getDriver(), this);
-	}
-}
