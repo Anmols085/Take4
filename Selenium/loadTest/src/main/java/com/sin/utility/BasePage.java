@@ -5,15 +5,15 @@ import org.openqa.selenium.WebDriver;
 public class BasePage {
 	
 	protected static WebDriver driver;
-	private static GetDesiredDrivers getDriver = null;
+	private GetDesiredDrivers getDriver = null;
 
-	public static WebDriver getDriver() {
+	public WebDriver getDriver() {
 		return driver;
 	}
-	public static void setDriver(WebDriver driver) {
+/*	public void setDriver(WebDriver driver) {
 		BasePage.driver = driver;
-	}
-	public static WebDriver generateWebDriver(String browser) {
+	}*/
+	public WebDriver generateWebDriver(String browser) {
 		getDriver = new GetDesiredDrivers();
 		if(browser.equalsIgnoreCase("Chrome")) driver = getDriver.generateChromeInstance();
 		else if(browser.equalsIgnoreCase("Firefox"));
@@ -21,7 +21,7 @@ public class BasePage {
 		else if(browser.equalsIgnoreCase("Safari"));
 		return driver;
 	}
-	public static void quitDriver() {
+	public void quitDriver() {
 		driver.quit();
 	}
 }

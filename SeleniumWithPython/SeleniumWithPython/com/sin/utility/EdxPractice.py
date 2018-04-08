@@ -3,7 +3,7 @@ number = 50
 upperLimit = 100
 lowerLimit = 0
 guess = 'a'
-print("Is your secret number "+str(number)+"?")
+
 guess = input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.")
 while True:
 

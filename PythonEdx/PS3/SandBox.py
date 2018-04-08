@@ -1,30 +1,18 @@
-import string
+import math
 
-def build_shift_dict(shift):
-    newDict = {}
-    j=0
-    alphabet = string.ascii_lowercase
-    for i in range(len(alphabet)):
-        if((i+shift)<len(alphabet)):
-            newDict[alphabet[i]] = alphabet[i+shift]
-        else :
-            newDict[alphabet[i]] = alphabet[j]
-            j += 1
-    j=0
-    alphabet = string.ascii_uppercase
-    for i in range(len(alphabet)):
-        if((i+shift)<len(alphabet)):
-            newDict[alphabet[i]] = alphabet[i+shift]
-        else :
-            newDict[alphabet[i]] = alphabet[j]
-            j += 1
-    return newDict
+class Point:
+    def __init__(self, x, y, z):
+        self.x=x
+        self.y=y
+        self.z=z
+    
+    def __str__(self):
+        return "point : ({}, {}, {}))".format(self.x, self.y, self.z)
+    
+    def distance(self, other):
+        return math.sqrt((self.x-other.x)**2+(self.y-other.y)**2+(self.z-other.z)**2)
 
-print(build_shift_dict(3))
-s = "hello world, help"
-print(s.split())
-removeSpace = ''
-for i in range(len(s)-1):
-    removeSpace += s[i]
-print(removeSpace)
-        
+a = Point(1, 2, 3)
+b = Point(0, 0, 0)
+print(a)
+print(a.distance(b))

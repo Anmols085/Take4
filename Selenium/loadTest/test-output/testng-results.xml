@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="22171" started-at="2018-03-20T11:50:28Z" finished-at="2018-03-20T11:50:51Z">
+  <suite name="Suite" duration-ms="13568" started-at="2018-04-07T18:46:58Z" finished-at="2018-04-07T18:47:11Z">
     <groups>
     </groups>
-    <test name="TestEdx" duration-ms="19603" started-at="2018-03-20T11:50:28Z" finished-at="2018-03-20T11:50:48Z">
+    <test name="TestEdx" duration-ms="12187" started-at="2018-04-07T18:46:58Z" finished-at="2018-04-07T18:47:10Z">
       <class name="com.sin.scenario.Test002">
-        <test-method status="PASS" signature="verifySearchButton()[pri:0, instance:com.sin.scenario.Test002@1d057a39]" name="verifySearchButton" duration-ms="5124" started-at="2018-03-20T17:20:28Z" finished-at="2018-03-20T17:20:33Z">
+        <test-method status="PASS" signature="verifySearchButton()[pri:0, instance:com.sin.scenario.Test002@1d057a39]" name="verifySearchButton" duration-ms="1209" started-at="2018-04-08T00:16:58Z" finished-at="2018-04-08T00:16:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchButton -->
-        <test-method status="PASS" signature="loginEdx()[pri:0, instance:com.sin.scenario.Test002@1d057a39]" name="loginEdx" duration-ms="9178" started-at="2018-03-20T17:20:33Z" depends-on-methods="com.sin.scenario.Test002.verifySearchButton" finished-at="2018-03-20T17:20:43Z">
+        <test-method status="PASS" signature="loginEdx()[pri:0, instance:com.sin.scenario.Test002@1d057a39]" name="loginEdx" duration-ms="7693" started-at="2018-04-08T00:16:59Z" depends-on-methods="com.sin.scenario.Test002.verifySearchButton" finished-at="2018-04-08T00:17:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginEdx -->
       </class> <!-- com.sin.scenario.Test002 -->
       <class name="com.sin.scenario.Test003">
-        <test-method status="PASS" signature="browseCourses()[pri:0, instance:com.sin.scenario.Test003@224edc67]" name="browseCourses" duration-ms="5275" started-at="2018-03-20T17:20:43Z" finished-at="2018-03-20T17:20:48Z">
+        <test-method status="PASS" signature="browseCourses()[pri:0, instance:com.sin.scenario.Test003@224edc67]" name="browseCourses" duration-ms="3262" started-at="2018-04-08T00:17:07Z" finished-at="2018-04-08T00:17:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browseCourses -->
       </class> <!-- com.sin.scenario.Test003 -->
     </test> <!-- TestEdx -->
-    <test name="TestCoursera" duration-ms="2548" started-at="2018-03-20T11:50:48Z" finished-at="2018-03-20T11:50:51Z">
+    <test name="TestCoursera" duration-ms="1336" started-at="2018-04-07T18:47:10Z" finished-at="2018-04-07T18:47:11Z">
       <class name="com.sin.scenario.Test002">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.sin.scenario.Test002@1d057a39]" name="beforeSuite" is-config="true" duration-ms="2893" started-at="2018-03-20T17:20:25Z" finished-at="2018-03-20T17:20:28Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.sin.scenario.Test002@1d057a39]" name="beforeSuite" is-config="true" duration-ms="3192" started-at="2018-04-08T00:16:54Z" finished-at="2018-04-08T00:16:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.sin.scenario.Test002@1d057a39]" name="afterClass" is-config="true" duration-ms="619" started-at="2018-03-20T17:20:51Z" finished-at="2018-03-20T17:20:51Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.sin.scenario.Test002@1d057a39]" name="afterClass" is-config="true" duration-ms="608" started-at="2018-04-08T00:17:11Z" finished-at="2018-04-08T00:17:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.sin.scenario.Test002 -->
       <class name="com.sin.scenario.Test003">
-        <test-method status="PASS" signature="browseCourses()[pri:0, instance:com.sin.scenario.Test003@1794d431]" name="browseCourses" duration-ms="2546" started-at="2018-03-20T17:20:48Z" finished-at="2018-03-20T17:20:51Z">
+        <test-method status="PASS" signature="browseCourses()[pri:0, instance:com.sin.scenario.Test003@1794d431]" name="browseCourses" duration-ms="1333" started-at="2018-04-08T00:17:10Z" finished-at="2018-04-08T00:17:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browseCourses -->

@@ -13,25 +13,26 @@ import com.sin.utility.BasePage;
 public class Test002 {
 
     private EdxLoginFlow loginToEdx = null;
+    private BasePage baseTest = new BasePage();
 
     @BeforeSuite
     public void beforeSuite() {
-        BasePage.generateWebDriver("Chrome");
+    	baseTest.generateWebDriver("Chrome");
     }
 
     @AfterSuite
     public void afterClass() {
-    	BasePage.quitDriver();
+    	baseTest.quitDriver();
     }
 
     @Test	//Verify Google home page
     public void verifySearchButton() {
 
     	System.out.println("Inside test002, Google section");
-        BasePage.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        BasePage.getDriver().get("http://www.google.com");
+    	baseTest.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    	baseTest.getDriver().get("http://www.google.com");
         String search_text = "Googl Search";
-        WebElement search_button = BasePage.getDriver().findElement(By.name("btnK"));
+        WebElement search_button = baseTest.getDriver().findElement(By.name("btnK"));
         String text = search_button.getAttribute("value");
         Assert.assertNotEquals(text, search_text, "Text not found!");
     }
@@ -42,7 +43,7 @@ public class Test002 {
 
     	System.out.println("Inside test002, Edx section");
     	loginToEdx = new EdxLoginFlow();
-    	BasePage.getDriver().get("https://www.edx.org/");
+    	baseTest.getDriver().get("https://www.edx.org/");
     	loginToEdx.navigateToLoginPage();
     }
 }

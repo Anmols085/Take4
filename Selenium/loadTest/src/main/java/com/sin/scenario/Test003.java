@@ -11,15 +11,16 @@ import com.sin.utility.BasePage;
 public class Test003 {
 	
 	private EdxBrowseCoursesFlow homePage = null;
-	EdxValidation validateNavigation = null;;
+	EdxValidation validateNavigation = null;
+	BasePage baseTest= new BasePage();
 
 	@Test
 	public void browseCourses() {
 
-		BasePage.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		baseTest.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		System.out.println("Inside test003");
 		homePage = new EdxBrowseCoursesFlow();
-		BasePage.getDriver().get("https://www.edx.org/");
+		baseTest.getDriver().get("https://www.edx.org/");
 		homePage.navigateToBrowseCourse();
 	}
 }

@@ -260,10 +260,10 @@ class CiphertextMessage(Message):
             mn = Message(string)
             realMessage += mn.apply_shift(s) + " "
         removeSpace = ''
-        for i in range(len(realMessage)):
+        for i in range(len(realMessage)-1):
             removeSpace += realMessage[i]
         t = (s, )
-        t += (realMessage, )
+        t += (removeSpace, )
         return t
             
 
