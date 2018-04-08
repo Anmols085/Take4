@@ -7,43 +7,52 @@ import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+
+import com.sin.beans.PropertyBean;
 import com.sin.edx.EdxLoginFlow;
 import com.sin.utility.BasePage;
+import com.sin.utility.ReadPropertiesFile;
 
 public class Test002 {
 
-    private EdxLoginFlow loginToEdx = null;
-    private BasePage baseTest = new BasePage();
+	private EdxLoginFlow loginToEdx = null;
+	private BasePage baseTest = new BasePage();
+	private PropertyBean properties = new PropertyBean();
 
-    @BeforeSuite
-    public void beforeSuite() {
-    	baseTest.generateWebDriver("Chrome");
-    }
+	@BeforeSuite
+	public void beforeSuite() {
+		try {
+			PropertyBean.setProperties(ReadPropertiesFile.setProperties());
+		} catch (Exception e) {
+		}
+		baseTest.generateWebDriver(properties);
+	}
 
-    @AfterSuite
-    public void afterClass() {
-    	baseTest.quitDriver();
-    }
+	@AfterSuite
+	public void afterClass() {
+		baseTest.quitDriver();
+	}
 
-    @Test	//Verify Google home page
-    public void verifySearchButton() {
+	@Test // Verify Google home page
+	public void verifySearchButton() {
 
-    	System.out.println("Inside test002, Google section");
-    	baseTest.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    	baseTest.getDriver().get("http://www.google.com");
-        String search_text = "Googl Search";
-        WebElement search_button = baseTest.getDriver().findElement(By.name("btnK"));
-        String text = search_button.getAttribute("value");
-        Assert.assertNotEquals(text, search_text, "Text not found!");
-    }
-    
-    @Test	//Verify login error message from EDX
-    	(dependsOnMethods = {"verifySearchButton"})
-    public void loginEdx() {
+		System.out.println(properties.getProperty("favoriteFood"));
+		System.out.println("Inside test002, Google section");
+		baseTest.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		baseTest.getDriver().get("http://www.google.com");
+		String search_text = "Googl Search";
+		WebElement search_button = baseTest.getDriver().findElement(By.name("btnK"));
+		String text = search_button.getAttribute("value");
+		Assert.assertNotEquals(text, search_text, "Text not found!");
+	}
 
-    	System.out.println("Inside test002, Edx section");
-    	loginToEdx = new EdxLoginFlow();
-    	baseTest.getDriver().get("https://www.edx.org/");
-    	loginToEdx.navigateToLoginPage();
-    }
+	@Test // Verify login error message from EDX
+	(dependsOnMethods = { "verifySearchButton" })
+	public void loginEdx() {
+
+		System.out.println("Inside test002, Edx section");
+		loginToEdx = new EdxLoginFlow();
+		baseTest.getDriver().get("https://www.edx.org/");
+		loginToEdx.navigateToLoginPage();
+	}
 }
