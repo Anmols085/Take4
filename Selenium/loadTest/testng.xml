@@ -3,13 +3,18 @@
 <suite name="Suite" parallel="false">
 	<test name="TestEdx">
 		<classes>
-			<class name="com.sin.scenario.Test002"/>
+			<class name="com.sin.scenario.Test002" />
 			<class name="com.sin.scenario.Test003" />
 		</classes>
 	</test> <!-- Test -->
-	<test name="TestCoursera">
+	<test name="BrowseEdxCourses">
 		<classes>
 			<class name="com.sin.scenario.Test003" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="ExceptionTest">
+		<classes>
+			<class name="com.sin.scenario.Test004" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

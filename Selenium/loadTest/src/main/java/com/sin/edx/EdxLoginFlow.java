@@ -17,6 +17,7 @@ public class EdxLoginFlow {
 		loginPage.enterID("anmols085@gmail.com");
 		loginPage.enterPassword("1234");
 		loginPage.clickSigninBtn();
+		//Thread.sleep(10000);
 		validateNavigation.validateLoginFailure(loginPage);
 	}
 }

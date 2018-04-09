@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -32,8 +33,13 @@ public class Test002 {
 	public void afterClass() {
 		baseTest.quitDriver();
 	}
+	
+	@BeforeClass
+	public void printName() {
+		System.out.println("Test002 in play");
+	}
 
-	@Test // Verify Google home page
+	@Test//(expectedExceptions = NoSuchElementException.class) // Verify Google home page
 	public void verifySearchButton() {
 
 		System.out.println(properties.getProperty("favoriteFood"));
@@ -48,7 +54,7 @@ public class Test002 {
 
 	@Test // Verify login error message from EDX
 	(dependsOnMethods = { "verifySearchButton" })
-	public void loginEdx() {
+	public void loginEdx(){
 
 		System.out.println("Inside test002, Edx section");
 		loginToEdx = new EdxLoginFlow();

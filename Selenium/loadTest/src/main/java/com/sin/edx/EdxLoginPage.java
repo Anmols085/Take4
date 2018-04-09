@@ -22,9 +22,11 @@ public class EdxLoginPage extends InitBasePage{
 		return heading.getText();
 	}
 	public void enterID(String id) {
+		loginText.clear();
 		loginText.sendKeys(id);
 	}
 	public void enterPassword(String password) {
+		passwordText.clear();
 		passwordText.sendKeys(password);
 	}
 	public void clickSigninBtn() {

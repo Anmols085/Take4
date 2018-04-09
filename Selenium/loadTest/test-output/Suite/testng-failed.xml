@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="TestEdx(failed)">
+  <test name="ExceptionTest(failed)">
     <classes>
-      <class name="com.sin.scenario.Test002">
+      <class name="com.sin.scenario.Test004">
         <methods>
-          <include name="beforeSuite"/>
-          <include name="afterClass"/>
-          <include name="verifySearchButton"/>
-          <include name="loginEdx"/>
+          <include name="dividedByZeroExample1"/>
+          <include name="dividedByZeroExample2"/>
+          <include name="printName"/>
         </methods>
-      </class> <!-- com.sin.scenario.Test002 -->
-      <class name="com.sin.scenario.Test003">
-        <methods>
-          <include name="browseCourses"/>
-        </methods>
-      </class> <!-- com.sin.scenario.Test003 -->
+      </class> <!-- com.sin.scenario.Test004 -->
     </classes>
-  </test> <!-- TestEdx(failed) -->
-  <test name="TestCoursera(failed)">
-    <classes>
-      <class name="com.sin.scenario.Test003">
-        <methods>
-          <include name="browseCourses"/>
-        </methods>
-      </class> <!-- com.sin.scenario.Test003 -->
-    </classes>
-  </test> <!-- TestCoursera(failed) -->
+  </test> <!-- ExceptionTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

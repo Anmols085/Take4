@@ -36,7 +36,8 @@ public class EdxHomePage extends InitBasePage {
 	}
 
 	public void searchCourse(String course) {
-		System.out.println("Sending keys");
+		//System.out.println("Sending keys");
+		searchText.clear();
 		searchText.sendKeys(course);
 	}
 
