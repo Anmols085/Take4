@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
 import operateExcelSheet.ReadExcelSheet;
+import operateExcelSheet.WriteExcelFile;
 import operateTextFile.ReadTextFile;
 import operateTextFile.WriteTextFile;
 
@@ -15,6 +16,7 @@ public class MainClass {
 		ReadTextFile readTxtFile = new ReadTextFile();
 		WriteTextFile writeTextFile = new WriteTextFile();
 		ReadExcelSheet readExcel = new ReadExcelSheet();
+		WriteExcelFile writeExcel = new WriteExcelFile();
 		try {
 			System.out.println("Enter file path");
 			List<String> textInput = readTxtFile.readText();
@@ -23,6 +25,8 @@ public class MainClass {
 			writeTextFile.writeToTextFile(textInput);
 			System.out.println("Enter excel file path");
 			readExcel.readExcel();
+			System.out.println("Enter output excel file path");
+			writeExcel.createExcel();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (InvalidFormatException ex) {

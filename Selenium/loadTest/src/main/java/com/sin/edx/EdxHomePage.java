@@ -1,7 +1,11 @@
 package com.sin.edx;
 
+import org.openqa.selenium.By;
+//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sin.utility.InitBasePage;
 
@@ -21,6 +25,9 @@ public class EdxHomePage extends InitBasePage {
 	WebElement searchBtn;
 	@FindBy(css = "#main-content > section > div.featured-products > a")
 	WebElement browseCourseBtn;
+	
+	WebElement myDynamicElement = (new WebDriverWait(driver, 10))
+			  .until(ExpectedConditions.presenceOfElementLocated(By.className("menu-item")));
 
 	public String verifyNavigation() {
 		return logo.getAttribute("alt");
@@ -43,6 +50,8 @@ public class EdxHomePage extends InitBasePage {
 
 	public void clickSearchBtn() {
 		searchBtn.click();
+		//JavascriptExecutor js = (JavascriptExecutor)driver;
+		
 	}
 	
 	

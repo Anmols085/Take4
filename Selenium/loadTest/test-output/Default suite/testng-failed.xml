@@ -3,13 +3,15 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.sin.scenario.Test004">
+      <class name="com.sin.scenario.Test002">
         <methods>
-          <include name="dividedByZeroExample1"/>
-          <include name="dividedByZeroExample2"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
           <include name="printName"/>
+          <include name="verifySearchButton"/>
+          <include name="loginEdx"/>
         </methods>
-      </class> <!-- com.sin.scenario.Test004 -->
+      </class> <!-- com.sin.scenario.Test002 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

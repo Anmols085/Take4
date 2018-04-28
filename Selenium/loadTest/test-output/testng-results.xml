@@ -1,89 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="11311" started-at="2018-04-09T05:29:11Z" finished-at="2018-04-09T05:29:23Z">
+  <suite name="Default suite" duration-ms="28003" started-at="2018-04-19T18:38:57Z" finished-at="2018-04-19T18:39:25Z">
     <groups>
     </groups>
-    <test name="TestEdx" duration-ms="10036" started-at="2018-04-09T05:29:11Z" finished-at="2018-04-09T05:29:21Z">
+    <test name="Default test" duration-ms="28003" started-at="2018-04-19T18:38:57Z" finished-at="2018-04-19T18:39:25Z">
       <class name="com.sin.scenario.Test002">
-        <test-method status="PASS" signature="printName()[pri:0, instance:com.sin.scenario.Test002@26be92ad]" name="printName" is-config="true" duration-ms="1" started-at="2018-04-09T10:59:11Z" finished-at="2018-04-09T10:59:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printName -->
-        <test-method status="PASS" signature="verifySearchButton()[pri:0, instance:com.sin.scenario.Test002@26be92ad]" name="verifySearchButton" duration-ms="1315" started-at="2018-04-09T10:59:11Z" finished-at="2018-04-09T10:59:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchButton -->
-        <test-method status="PASS" signature="loginEdx()[pri:0, instance:com.sin.scenario.Test002@26be92ad]" name="loginEdx" duration-ms="6921" started-at="2018-04-09T10:59:13Z" depends-on-methods="com.sin.scenario.Test002.verifySearchButton" finished-at="2018-04-09T10:59:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginEdx -->
-      </class> <!-- com.sin.scenario.Test002 -->
-      <class name="com.sin.scenario.Test003">
-        <test-method status="PASS" signature="printName()[pri:0, instance:com.sin.scenario.Test003@14acaea5]" name="printName" is-config="true" duration-ms="0" started-at="2018-04-09T10:59:19Z" finished-at="2018-04-09T10:59:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printName -->
-        <test-method status="PASS" signature="browseCourses()[pri:0, instance:com.sin.scenario.Test003@14acaea5]" name="browseCourses" duration-ms="1775" started-at="2018-04-09T10:59:19Z" finished-at="2018-04-09T10:59:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browseCourses -->
-      </class> <!-- com.sin.scenario.Test003 -->
-    </test> <!-- TestEdx -->
-    <test name="BrowseEdxCourses" duration-ms="1222" started-at="2018-04-09T05:29:21Z" finished-at="2018-04-09T05:29:23Z">
-      <class name="com.sin.scenario.Test003">
-        <test-method status="PASS" signature="printName()[pri:0, instance:com.sin.scenario.Test003@42e26948]" name="printName" is-config="true" duration-ms="0" started-at="2018-04-09T10:59:21Z" finished-at="2018-04-09T10:59:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printName -->
-        <test-method status="PASS" signature="browseCourses()[pri:0, instance:com.sin.scenario.Test003@42e26948]" name="browseCourses" duration-ms="1217" started-at="2018-04-09T10:59:21Z" finished-at="2018-04-09T10:59:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browseCourses -->
-      </class> <!-- com.sin.scenario.Test003 -->
-    </test> <!-- BrowseEdxCourses -->
-    <test name="ExceptionTest" duration-ms="26" started-at="2018-04-09T05:29:23Z" finished-at="2018-04-09T05:29:23Z">
-      <class name="com.sin.scenario.Test002">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.sin.scenario.Test002@26be92ad]" name="beforeSuite" is-config="true" duration-ms="3172" started-at="2018-04-09T10:59:08Z" finished-at="2018-04-09T10:59:11Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.sin.scenario.Test002@2286778]" name="beforeSuite" is-config="true" duration-ms="2856" started-at="2018-04-20T00:08:55Z" finished-at="2018-04-20T00:08:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.sin.scenario.Test002@26be92ad]" name="afterClass" is-config="true" duration-ms="615" started-at="2018-04-09T10:59:23Z" finished-at="2018-04-09T10:59:23Z">
+        <test-method status="PASS" signature="printName()[pri:0, instance:com.sin.scenario.Test002@2286778]" name="printName" is-config="true" duration-ms="4" started-at="2018-04-20T00:08:57Z" finished-at="2018-04-20T00:08:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printName -->
+        <test-method status="PASS" signature="verifySearchButton()[pri:0, instance:com.sin.scenario.Test002@2286778]" name="verifySearchButton" duration-ms="2931" started-at="2018-04-20T00:08:57Z" finished-at="2018-04-20T00:09:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchButton -->
+        <test-method status="FAIL" signature="loginEdx()[pri:0, instance:com.sin.scenario.Test002@2286778]" name="loginEdx" duration-ms="25026" started-at="2018-04-20T00:09:00Z" depends-on-methods="com.sin.scenario.Test002.verifySearchButton" finished-at="2018-04-20T00:09:25Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.className: menu-item (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.className: menu-item (tried for 10 second(s) with 500 milliseconds interval)at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)at com.sin.edx.EdxHomePage.<init>(EdxHomePage.java:30)at com.sin.edx.EdxLoginFlow.navigateToLoginPage(EdxLoginFlow.java:14)at com.sin.scenario.Test002.loginEdx(Test002.java:69)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.className: menu-itemFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'System info: host: 'LEONIDAS', ip: '192.168.1.24', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_161'Driver info: driver.version: unknownat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)at java.util.Optional.orElseThrow(Unknown Source)at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)... 28 more]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginEdx -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.sin.scenario.Test002@2286778]" name="afterClass" is-config="true" duration-ms="604" started-at="2018-04-20T00:09:25Z" finished-at="2018-04-20T00:09:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.sin.scenario.Test002 -->
-      <class name="com.sin.scenario.Test004">
-        <test-method status="PASS" signature="printName()[pri:0, instance:com.sin.scenario.Test004@204f30ec]" name="printName" is-config="true" duration-ms="0" started-at="2018-04-09T10:59:23Z" finished-at="2018-04-09T10:59:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printName -->
-        <test-method status="PASS" signature="dividedByZeroExample1()[pri:0, instance:com.sin.scenario.Test004@204f30ec]" name="dividedByZeroExample1" duration-ms="7" started-at="2018-04-09T10:59:23Z" finished-at="2018-04-09T10:59:23Z">
-          <exception class="java.lang.ArithmeticException">
-            <message>
-              <![CDATA[/ by zero]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ArithmeticException: / by zeroat com.sin.scenario.Test004.dividedByZeroExample1(Test004.java:14)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ArithmeticException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dividedByZeroExample1 -->
-        <test-method status="FAIL" signature="dividedByZeroExample2()[pri:0, instance:com.sin.scenario.Test004@204f30ec]" name="dividedByZeroExample2" duration-ms="3" started-at="2018-04-09T10:59:23Z" depends-on-methods="com.sin.scenario.Test004.dividedByZeroExample1" finished-at="2018-04-09T10:59:23Z">
-          <exception class="java.lang.ArithmeticException">
-            <message>
-              <![CDATA[/ by zero]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ArithmeticException: / by zeroat com.sin.scenario.Test004.dividedByZeroExample2(Test004.java:19)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ArithmeticException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dividedByZeroExample2 -->
-      </class> <!-- com.sin.scenario.Test004 -->
-    </test> <!-- ExceptionTest -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

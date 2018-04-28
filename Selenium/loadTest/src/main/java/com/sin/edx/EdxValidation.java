@@ -2,14 +2,20 @@ package com.sin.edx;
 
 import org.testng.Assert;
 
+import com.sin.beans.PropertyBean;
+import com.sin.utility.Screenshots;
+
 public class EdxValidation {
 	
-	String homePageString = "edX Home Page";
-	String loginPageHeading = "Sign In";
-	String searchBtn = "Search";
-	String loginErrorMessage = "We couldn't sign you in.";
+	private PropertyBean properties = new PropertyBean();
+	Screenshots screenshot = new Screenshots();
+	String homePageString = properties.getProperty("ExpectedEdxHomePageHeadingTestCase002");
+	String loginPageHeading = properties.getProperty("ExpectedEdxLoginPageHeadingTestCase002");
+	String searchBtn = properties.getProperty("ExpectedEdxSearchBtnTestCase002");
+	String loginErrorMessage = properties.getProperty("ExpectedEdxLoginErrorMessageTestCase002");
 	
 	public void validateHomePageLogo(EdxHomePage homePage){
+		screenshot.switchToFrame();
 		Assert.assertEquals(homePage.verifyNavigation(),homePageString,"String not found");
 	}
 	
