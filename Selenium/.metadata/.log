@@ -672,3 +672,9 @@ java -ea -classpath A:\JAVA\eclipse-jee-oxygen-2-win32-x86_64\eclipse\configurat
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-04-26 22:52:53.781
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-04-28 16:43:47.745
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-04-28 16:43:47.793
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!

@@ -9,5 +9,6 @@ public class Main {
 		c.LinkedListTest();
 		c.HashSetTest();
 		c.TreeSetTest();
+		c.objectData();
 	}
 }

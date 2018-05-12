@@ -33,6 +33,7 @@ public class ReadExcelSheet {
 			while (sheetIterator.hasNext()) {
 				Sheet sheet = sheetIterator.next();
 				Iterator<Row> rowIterator = sheet.rowIterator();
+				System.out.println(sheet.getRow(0).getLastCellNum());
 				while (rowIterator.hasNext()) {
 					Row row = rowIterator.next();
 
@@ -50,7 +51,7 @@ public class ReadExcelSheet {
 		} catch (Exception e) {
 			throw e;
 		} finally {
-			readerExcel.close();
+			//readerExcel.close();
 		}
 	}
 }
